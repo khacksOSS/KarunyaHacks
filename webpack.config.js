@@ -4,19 +4,19 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   entry: './src/index.js',
   output: {
-    path: path.resolve(__dirname, 'build'),
+    path: path.resolve(__dirname, 'public'),
     publicPath: '/',
     filename: 'bundle.js'
   },
   devServer: {
-    contentBase: "./build",
+    contentBase: "./public",
   },
   module: {
     rules: [
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        use: ['babel-loader', 'eslint-loader']
+        use: ['babel-loader']
       },
       { 
         test: /\.less$/,
