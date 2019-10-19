@@ -7,6 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --mode development",
     "format": "prettier --write \"src/**/*.js\"",
+    "style": "prettier --check \"src/**/*.js\"",
     "build": "webpack --mode production"
   },
   "keywords": [],
