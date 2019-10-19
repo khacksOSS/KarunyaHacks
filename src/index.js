@@ -34,13 +34,16 @@ export default function App () {
     return (
         <>
             <Global />
+            <div>
+            WELCOME
+            </div>
             <Container
                 style={{ ...rest, width: size, height: size }}
                 onClick={() => set(open => !open)}
             >
             MENU
                 {transitions.map(({ item, key, props }) => (
-                    <Item key={key} style={{ ...props, background: item.css }} />
+                    <Item key={key} style={{ ...props, background: item.css }}><a href="hello.html">hello</a></Item>
                 ))}
             </Container>
         </>
