@@ -12,3 +12,7 @@ install:
 - npm install
 script:
 - npm run build
+
+notifications:
+  email:
+    - khacks@karunya.edu.in
