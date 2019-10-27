@@ -26,6 +26,19 @@ module.exports = {
           'less-loader',
         ],
       },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
+      },
+      {
+        test: /\.(png|jpeg|gif)$/,
+        use: [{
+            loader: 'file-loader',
+            options: {}
+        }]
+    }
+
+
     ]
   },
   plugins: [

@@ -1,0 +1,101 @@
+#contact_form{
+    border: 2px solid #414141;
+    padding-bottom: 0.5rem;
+    width: 90%;
+    margin-left: 4rem;
+    border-top-left-radius: 0.7rem;
+    border-top-right-radius: 0.7rem;
+    margin-top: 1%;
+}
+
+#top_menu {
+
+
+
+    height: 1.7rem;
+    background-color:#414141;
+    z-index: -1;
+    color: white;
+    font-weight: 400;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+
+}
+#sub_part {
+
+    color: black;
+    font-weight: 400;
+
+}
+#new_message {
+    display: inline-block;
+    padding-left: 0.7rem;
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+}
+#wrong {
+    height: 1.5rem;
+    margin-top: 0.2rem;
+    display:inline-block;
+    float: right;
+    margin-right: 0.7rem;
+}
+
+#to{
+    margin-left: 0.6rem;
+    margin-top: 0.5rem;
+    display: inline-block;
+}
+
+#from{
+    margin-top: 0.4rem;
+    margin-left: 0.6rem;
+    display: inline-block;
+}
+#send_button{
+    margin-top: 0.4rem;
+
+}
+#body_part{
+    height: 17rem;
+}
+
+#bottom_image{
+    width:70%;
+}
+
+.form-option{
+    width: 90%;
+    margin-left: 2.5%;
+}
+.form-option1{
+    width: 90%;
+    margin-left: 1.1%;
+    
+}
+.form-option2{
+    width: 99.2%;
+    margin-top: -0.2rem;
+    resize: none;
+    margin-left: 0.1rem;
+    height: 100%;
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .form-option{
+        width: 70%;
+        margin-left: 2.5%;
+    }
+    .form-option1{
+        width: 65%;
+        margin-left: 2%;   
+    }
+    .form-option2{
+        width: 97%;
+    }
+    #contact_form{
+        margin-left: 1rem;     
+    }
+    
+}
