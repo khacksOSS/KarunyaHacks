@@ -7,11 +7,11 @@ var transport = {
   host: 'smtp.gmail.com',
   auth: {
     user: creds.USER,
-    pass: creds.PASS
-  }
-}
+    pass: creds.PASS,
+  },
+};
 
-var transporter = nodemailer.createTransport(transport)
+var transporter = nodemailer.createTransport(transport);
 
 transporter.verify((error, success) => {
   if (error) {
@@ -22,29 +22,29 @@ transporter.verify((error, success) => {
 });
 
 router.post('/', (req, res, next) => {
-  var name = req.body.name
-  var email = req.body.email
-  var message = req.body.message
-  var content = `name: ${name} \n email: ${email} \n message: ${content} `
+  var name = req.body.name;
+  var email = req.body.email;
+  var message = req.body.message;
+  var content = `name: ${name} \n email: ${email} \n message: ${content} `;
 
   var mail = {
     from: name,
-    to: 'RECEIVING_EMAIL_ADDRESS_GOES_HERE',  //Change to email address that you want to receive messages on
+    to: 'RECEIVING_EMAIL_ADDRESS_GOES_HERE', //Change to email address that you want to receive messages on
     subject: 'New Message from Contact Form',
-    text: content
-  }
+    text: content,
+  };
 
   transporter.sendMail(mail, (err, data) => {
     if (err) {
       res.json({
-        msg: 'fail'
-      })
+        msg: 'fail',
+      });
     } else {
       res.json({
-        msg: 'success'
-      })
+        msg: 'success',
+      });
     }
-  })
-})
+  });
+});
 
 module.exports = router;
