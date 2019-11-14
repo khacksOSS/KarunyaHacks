@@ -9,4 +9,4 @@ A website for Karunya Hacks made in Reactjs
 ## For contribution Details
 * [Contribution](./contribution.md)
 
-Testing for LIGHTHOUS
+Testing
