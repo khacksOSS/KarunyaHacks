@@ -34,18 +34,9 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
 
       # run tests!
-      - run : npm run style
       - run : npm run build 
-
-  build-lhci:
-    docker:
-      - image: circleci/node:10.16-browsers
-    working_directory: ~/KarunyaHacks
-    steps:
-      - checkout
-      - run: npm install
-      - run: npm run build
       - run: sudo npm install -g @lhci/cli@0.3.x
       - run:
           name: lhci autorun
           command: lhci autorun --upload.target=temporary-public-storage || echo "LHCI failed!"
+      - run : npm run style
