@@ -10,4 +10,4 @@ A website for Karunya Hacks made in Reactjs
 * [Contribution](./contribution.md)
 
 Testing, triggering PR, again
-Testing for lhci ?
+Testing for 
