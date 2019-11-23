@@ -11,5 +11,3 @@ A website for Karunya Hacks made in Reactjs
 
 Testing, triggering PR, again
 Testing for 
-
-k
