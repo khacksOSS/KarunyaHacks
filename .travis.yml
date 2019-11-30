@@ -14,7 +14,7 @@ install:
   - npm install
 script:
   - npm run build
-  - lhci autorun
+  - ./scripts/lighthouse.sh
 addons:
   chrome: stable
 notifications:
