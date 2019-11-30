@@ -1,15 +1,13 @@
 sudo: false
 language: node_js
 node_js:
-- '10'
+- '8'
 branches:
   only:
   - master
 cache:
   directories:
   - node_modules
-before_install:
-  - npm install -g @lhci/cli@0.3.x
 install:
   - npm install
 script:
